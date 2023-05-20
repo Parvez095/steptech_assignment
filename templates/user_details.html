@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>{{ user[0] }}</td>  <!-- Assuming the ID is the first column in the user tuple -->
+            <td>{{ user[1] }}</td>  <!-- Assuming the Name is the second column in the user tuple -->
+            <td>{{ user[2] }}</td>  <!-- Assuming the Email is the third column in the user tuple -->
+            <td>{{ user[3] }}</td>  <!-- Assuming the Role is the fourth column in the user tuple -->
+        </tr>
+    </table>
+
+    <a href="/users">Back to User List</a>
+</body>
+</html>
